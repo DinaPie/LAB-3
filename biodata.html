@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-image: url(pewds.png);
+            background-repeat: repeat;
+        }
+
+        .wrapper {
+            display:flex;
+            flex-direction: column;
+            min-height: 400px;
+            background-color: transparent;
+            width: 80%;
+            margin: auto;  
+        }
+
+        .banner{
+            display:flex;
+            flex-direction: column;
+            min-height: 50px;
+            background-color: lightgrey;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: black;
+            
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: black;
+            background-color:white;
+            opacity: 60%
+        }
+
+        .navigation{
+
+            display:flex;
+            flex-direction: row;
+            min-height: 20px;
+            background-color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+
+        .main {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: large;
+        }
+
+        .sidebar {
+
+            display:flex;
+            flex-direction: column;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 30%;
+            /* min-height: 10px; */
+            margin-top: 10px;
+            color: whitesmoke;
+        }
+
+        .body {
+
+            display:flex;
+            flex-direction: row;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 65%;
+            margin-top: 10px;
+            color: whitesmoke;
+        }
+
+        .divide {
+            display:flex;
+            flex-direction: column;
+            background-color: grey;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+            color: black;
+        }
+
+        .footer {
+            display:flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .body > p {
+            order: 1;
+            /* flex-grow: 1;
+            margin-right: 70px; */
+        }
+
+        .body > img {
+            order: 2;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="dina.jpg" alt="">
+            <div class="centered">About Me</div>
+        </div>
+        <div class="navigation">
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus.html">Campus Life</a>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <p>NAME</p>
+            </div>
+            <div class="body">
+                <p>WAN NURIN RUSYDINA BINTI WAN ROSMAN</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>DATE OF BIRTH</p>
+            </div>
+            <div class="body">
+                <p>26 AUGUST 2001</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>RELIGION</p>
+            </div>
+            <div class="body">
+                <p>ISLAM</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>RACE</p>
+            </div>
+            <div class="body">
+                <p>MALAY</p>
+            </div>
+        </div>
+
+        <div class="divide">
+            ADDRESS
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>STREET</p>
+            </div>
+            <div class="body">
+                <p>JALAN ZAMRUD UTAMA</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>TOWN</p>
+            </div>
+            <div class="body">
+                <p>TAMAN ZAMRUD</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>DISTRICT</p>
+            </div>
+            <div class="body">
+                <p>KAJANG</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>STATE</p>
+            </div>
+            <div class="body">
+                <p>SELANGOR</p>
+            </div>
+        </div> 
+
+        <div class="divide">
+            CONTACT
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>MOBILE PHONE</p>
+            </div>
+            <div class="body">
+                <p>011-1068 3346</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>SOCIAL MEDIA</p>
+            </div>
+            <div class="body">
+                <p>INSTAGRAM: DinaPie</p>
+            </div>
+        </div>
+
+        <div class="divide">
+            OTHER
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>COURSE AND INSTITUITION</p>
+            </div>
+            <div class="body">
+                <p>DEGREE IN SCIENCE COMPUTER OF SOTWARE ENGINEERING WITH HONOUR (UNIVERSITY TUN HUSSIEN ONN MALAYSIA)</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>PROGRAMMING SKILLS</p>
+            </div>
+            <div class="body">
+                <p>C++, C PROGRAMMING, C#, JAVA, HTML</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>PERSONAL INTEREST</p>
+            </div>
+            <div class="body">
+                <p>PLAYING VIDEO GAMES</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <p>FUTURE PLAN IN 2024</p>
+            </div>
+            <div class="body">
+                <p>FINISH MY DEGREE AND SOING SOME PART-TIME WORK WITH ANY COMPANY TO EXTEND MY CODING SKILLS</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy Wan Nurin Rusydina AI210433
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-image: url(pewds.png);
+            background-repeat: repeat;
+        }
+
+        .wrapper {
+            display:flex;
+            flex-direction: column;
+            min-height: 400px;
+            background-color: transparent;
+            width: 80%;
+            margin: auto;  
+        }
+
+        .banner{
+            display:flex;
+            flex-direction: column;
+            min-height: 50px;
+            background-color: lightgrey;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: black;
+            
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: black;
+            background-color:white;
+            opacity: 60%
+        }
+
+        .navigation{
+
+            display:flex;
+            flex-direction: row;
+            min-height: 20px;
+            background-color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+
+        .main {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sidebar_small {
+            display:flex;
+            flex-direction: row;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 30%;
+            /* min-height: 10px; */
+            margin-top: 10px;
+            color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        .body_big {
+            display:flex;
+            flex-direction: row;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 65%;
+            margin-top: 10px;
+            color: whitesmoke;
+        }
+
+        .sidebar_big {
+
+            display:flex;
+            flex-direction: column;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 65%;
+            /* min-height: 10px; */
+            margin-top: 10px;
+            color: whitesmoke;
+        }
+
+        .body_small {
+            display:flex;
+            flex-direction: row;
+            background-color: rgba(131, 1, 1, 0.5);
+            flex-basis: 30%;
+            margin-top: 10px;
+            color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        .divide {
+            display:flex;
+            flex-direction: column;
+            background-color: grey;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+            color: black;
+        }
+
+        .footer {
+            display:flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .body > p {
+            order: 1;
+            /* flex-grow: 1;
+            margin-right: 70px; */
+        }
+
+        .body > img {
+            order: 2;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="dina.jpg" alt="">
+            <div class="centered">About Me</div>
+        </div>
+        <div class="navigation">
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus.html">Campus Life</a>
+        </div>
+
+        <div class="main">
+            <div class="sidebar_small">
+                <p>Playing Frisbee every evening at padang TDI</p>
+            </div>
+            <div class="body_big">
+                <video width=100% autoplay muted>
+                    <source src="frisbee.mp4" type="video/mp4">
+                    <source src="frisbee.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar_big">
+                <video width=100% autoplay muted>
+                    <source src="dekan.mp4" type="video/mp4">
+                    <source src="dekan.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="body_small">
+                <p>Majlis Anugerah Dekan FSKTM</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar_small">
+                <p>Festival Konvokesyen 2022</p>
+            </div>
+            <div class="body_big">
+                <video width=100% autoplay muted>
+                    <source src="festkon.mp4" type="video/mp4">
+                    <source src="festkon.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy Wan Nurin Rusydina AI210433
+        </div>
+    </div>
+</body>
+</html>
